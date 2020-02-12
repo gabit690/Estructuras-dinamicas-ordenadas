@@ -75,7 +75,7 @@ template<class T> unsigned int Pila<T>::contarElementos(){
 }
 
 template<class T> void Pila<T>::apilar(T elemento){
-	NodoSimple<T>* nuevo = new NodoSimple(elemento);
+	NodoSimple<T>* nuevo = new NodoSimple<T>(elemento);
 	nuevo->setSiguiente(this->tope);
 	this->tope = nuevo;
 	this->tamanio++;
