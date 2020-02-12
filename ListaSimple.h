@@ -120,7 +120,7 @@ template<class T> T ListaSimple<T>::obtenerCursor(){
 }
 
 template<class T> void ListaSimple<T>::insertar(T elemento, unsigned int posicion){
-	NodoSimple<T>* nuevo = new NodoSimple(elemento);
+	NodoSimple<T>* nuevo = new NodoSimple<T>(elemento);
 	if(posicion!=1){
 		NodoSimple<T>* anterior;
 		anterior = this->obtenerNodo(posicion-1);
